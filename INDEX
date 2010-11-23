@@ -1,0 +1,13 @@
+mstats					Carry out some statistics from the incomplete dataset
+edaprep					Prepare the dataset for exploratory data analysis
+mkjnw					Create a data matrix from the Johnson & Wichern's book
+elapsedtime				Compute the elapsed time between start time and end time
+mnimput					Perform the modified EM algorithm imputation on a normal multivariate dataset
+getmean					Estimate the row mean from a mtsdi regarding a fixed number of imputed values
+plot.mtsdi				Plot imputed dataset
+predict.mtsdi			Extract imputed dataset in the original scale
+summary.mtsdi			Print summary information
+print.summary.mtsdi		Method for summary printing
+print.mtsdi				Method for model information printing
+ 	
+
