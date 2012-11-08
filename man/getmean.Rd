@@ -18,7 +18,7 @@ getmean(object, weighted=TRUE, mincol=1, maxconsec=3)
  It is useful just in case one wants row mean estimated. If log tranformation was used, mean is adjusted accordingly. 
 }
 \value{
- A vector of of rows mean with lenght \eqn{n}, where \eqn{n} is the number of observations.
+ A vector of of rows mean with lenght \code{n}, where \code{n} is the number of observations.
  }
 \author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }

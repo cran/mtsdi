@@ -17,7 +17,7 @@
 # 04/01/2007 - some improvements and bug fixes - v. 0.2.4
 # 14/06/2007 - some improvements and bug fixes - v. 0.2.5
 # 20/06/2007 - some improvements and bug fixes - v. 0.2.6
-#
+# 08/11/2012 - fix namespace, startup functions, and warnings in em.spline - v. 0.3.3
 #
 
 #---------------------------------
@@ -540,7 +540,7 @@ if (is.null(df))
 else
 	for (j in 1:cols)		# applies models to all series
 		{
-		models[[j]] <- smooth.spline(x=t,y=xn[,j],w=w[,j],df=df[j],cv=FALSE)
+		models[[j]] <- smooth.spline(x=t,y=xn[,j],w=w[,j],df=df[j])
 		sp.pred[,j] <- predict(models[[j]],t)$y
 		}
 			
