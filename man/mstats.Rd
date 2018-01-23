@@ -20,7 +20,7 @@ A list containing
   \item{columns}{number of missing in each column}
   \item{pattern}{the pattern of the missing values}
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}, \code{\link{getmean}}, \code{\link{edaprep}}}
 \examples{

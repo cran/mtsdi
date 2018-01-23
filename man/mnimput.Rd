@@ -39,7 +39,7 @@ One can select the method for the univariate time series filtering by the argume
 
 Other possibity for time series filtering is to fitting an ARIMA model for each of the time series by setting \code{method} to \code{"arima"}. The ARIMA models must be identified before using this function, nonetheless. \code{\link{arima}} function can be partially controlled through \code{ar.control}. Each column of \code{order} must hold the corresponding \eqn{(p,d,q)} parameters for each univariate time series if \code{period} is \code{NULL}. If \code{period} is not \code{NULL}, \code{order} must also hold the multiplicative seasonality parameters, so each column of \code{order} takes the form \eqn{(p,d,q,P,D,Q)}. \code{period} is the multiplicative seasonality period. \code{f.eps} and \code{f.maxit} control de convergence of the ARIMA fitting algorithm. Convergence problems due non stationarity may arise when using this option.
 
-Last but not least, a very interesting approach to modeelling temporal patterns to use a full fledged regression model. It is possible to use generalised aditive (or linear) models with exogenous variates to proper filtering of time patterns. One must set method to \code{gam} and supply a vector of formulas in \code{ga.control}. One must supply one formula for each covariate. Using covariates that are part of the formula of the imputation model may yield some colinearity among the variates. See \code{\link{gam}} and \code{\link{glm}} for details. In order to use regression models for the level, set \code{method} to \code{"gam"}
+Last but not least, a very interesting approach to modelling temporal patterns to use a full fledged regression model. It is possible to use generalised aditive (or linear) models with exogenous variates to proper filtering of time patterns. One must set method to \code{gam} and supply a vector of formulas in \code{ga.control}. One must supply one formula for each covariate. Using covariates that are part of the formula of the imputation model may yield some colinearity among the variates. See \code{\link{gam}} and \code{\link{glm}} for details. In order to use regression models for the level, set \code{method} to \code{"gam"}
  
 Simulations have shown that the algorithm is stable and yields good results on imputation of normal data.
 }
@@ -56,7 +56,7 @@ The function returns an object of class \code{mtsdi} containing
   \item{time}{elapsed time of the process}
 }
 \references{
-Junger, W. L. Ponce de Leon, A. Santos, N. (2003) Missing Data Imputation in Multivariate Time Series via EM Algorithm. \emph{Cadernos do IME} 15, 8--21.
+Junger, W.L. and Ponce de Leon, A. (2015) Imputation of Missing Data in Time Series for Air Pollutants. Atmospheric Environment, 102, 96-104.
 
 Johnson, R., Wichern, D. (1998) \emph{Applied Multivariate Statistical Analysis}. Prentice Hall.
 
@@ -69,7 +69,7 @@ Box, G., Jenkins, G., Reinsel, G. (1994) \emph{Time Series Analysis: Forecasting
 Hastie, T. J.; Tibshirani, R. J. (1990) \emph{Generalized Additive Models}. Chapman and Hall.
 
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}, \code{\link{predict.mtsdi}}, \code{\link{edaprep}}}
 \examples{

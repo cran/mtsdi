@@ -1,6 +1,6 @@
 \name{print.mtsdi}
 \alias{print.mtsdi}
-\title{Print Model Informartion}
+\title{Print Model Output}
 \description{
 Printing method for the imputation model
 }
@@ -15,7 +15,7 @@ Printing method for the imputation model
 \value{
 This function does not return a value.
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}}
 \examples{

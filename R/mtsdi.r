@@ -18,7 +18,7 @@
 # 14/06/2007 - some improvements and bug fixes - v. 0.2.5
 # 20/06/2007 - some improvements and bug fixes - v. 0.2.6
 # 08/11/2012 - fix namespace, startup functions, and warnings in em.spline - v. 0.3.3
-#
+# 02/01/2018 - minor bug fixes
 
 #---------------------------------
 # To do list:
@@ -846,7 +846,7 @@ if (object$log)
     filled.dataset <- exp(as.matrix(object$filled.dataset))-object$log.offset
 else
     filled.dataset <- as.matrix(object$filled.dataset)
-return(filled.dataset)
+return(as.data.frame(filled.dataset))
 }
 
 
@@ -900,8 +900,8 @@ for (i in vars)
 		lines(llevel[,i],col="blue",...)
 	if (points)
 		points(filled.dataset[,i],col="red",...)
-	legend(x=leg.loc,legend=c("observed","imputed","level"),col=c("black","red","blue"),lty=1,horiz=horiz) # alternate location c(18.5,16.1)
-	title(main=paste("Imputed data for series",colnames(filled.dataset[i])))
+	legend(x=leg.loc,legend=c("observed","imputed","level"),col=c("black","red","blue"),lty=1,horiz=horiz,bty="n") # alternate location c(18.5,16.1)
+	title(main=paste("Imputed data for series",colnames(filled.dataset)[i]))
 	}
 }
 
@@ -935,7 +935,7 @@ cat("\nEstimated mean vector:\n")
 for (i in 1:dim(x$muhat)[3])
 	{
 	if(dim(x$muhat)[3]!=1)
-		cat("\nBY factor level: ",dimnames(x$muhat)[[3]][i],"\n",sep="")
+		cat("\nCovariance window id: ",dimnames(x$muhat)[[3]][i],"\n",sep="")
 	print(x$muhat[,,i])
 	}
 cat("\nEstimated covariance matrix:\n")
@@ -957,10 +957,12 @@ cat("The process took ",x$time,".\n",sep="")
 
 if ((print.models)&&(!is.null(x$models)))
 	{
+	for (i in length(x$models))
+		x$models[[i]]$call <- NULL
 	cat("\nTime filtering models:")
 	for (i in 1:length(x$models))
 		{
-		cat("\n\nFilter model of variable: ",dimnames(x$muhat)[[1]][i],"\n",sep="")
+		cat("\n\nFilter model for variate: ",dimnames(x$muhat)[[1]][i],"\n",sep="")
 		print(x$models[[i]])
 		}
 	}

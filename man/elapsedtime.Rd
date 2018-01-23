@@ -19,7 +19,7 @@ String of the form \code{hh:mm:ss}
 }
 \note{It is not intended to be called directly.
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}}
 

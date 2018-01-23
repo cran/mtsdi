@@ -35,6 +35,6 @@ Internal functions called from within \code{\link{mnimput}}
 \details{
 These functions are not intendend for user-level call.
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \keyword{internal}

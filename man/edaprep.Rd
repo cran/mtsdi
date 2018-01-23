@@ -17,7 +17,7 @@ It replaces missing observation with the vector mean.
 \value{
 It returns \code{dataset} filled in with \code{NA}
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}, \code{\link{getmean}}, \code{\link{edaprep}}}
 \examples{

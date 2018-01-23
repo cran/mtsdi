@@ -17,7 +17,7 @@ It returns a data matrix.
 \references{
 Johnson, R., Wichern, D. (1998) \emph{Applied Multivariate Statistical Analysis}. Prentice Hall.
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}}
 \examples{

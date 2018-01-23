@@ -1,6 +1,6 @@
 \name{plot.mtsdi}
 \alias{plot.mtsdi}
-\title{Plot an Imputed Matrix}
+\title{Plot the Imputed Matrix}
 \description{
 This function produces a plot with imputed values and the estimated level for each of the columns in the imputed matrix.}
 \usage{
@@ -21,7 +21,7 @@ This function produces a plot with imputed values and the estimated level for ea
 \details{
 The \code{leg.loc} option may also be specified by setting one of the following quoted strings \code{"bottomright"}, \code{"bottom"}, \code{"bottomleft"}, \code{"left"}, \code{"topleft"}, \code{"top"}, \code{"topright"}, \code{"right"}, or \code{"center"}. This places the legend on the inside of the plot frame at the given location with the orietation set by \code{horiz}. See \code{\link{legend}} for further details.
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}}
 \examples{

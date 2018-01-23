@@ -24,7 +24,7 @@ The function resturns a list containing
 	\item{log.offset}{offset used in the log transformation in order to avoid zeros}
 }
 \references{
-Junger, W. L. Ponce de Leon, A. Santos, N. (2003) Missing Data Imputation in Multivariate Time Series via EM Algorithm. \emph{Cadernos do IME} 15, 8--21.
+Junger, W.L. and Ponce de Leon, A. (2015) Imputation of Missing Data in Time Series for Air Pollutants. Atmospheric Environment, 102, 96-104.
 
 Johnson, R., Wichern, D. (1998) \emph{Applied Multivariate Statistical Analysis}. Prentice Hall.
 
@@ -37,7 +37,7 @@ Box, G., Jenkins, G., Reinsel, G. (1994) \emph{Time Series Analysis: Forecasting
 Hastie, T. J.; Tibshirani, R. J. (1990) \emph{Generalized Additive Models}. Chapman and Hall.
 
 }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}, \code{\link{predict}}}
 \examples{

@@ -1,6 +1,6 @@
 \name{getmean}
 \alias{getmean}
-\title{Rows Mean Estimation
+\title{Row Means Estimates
 }
 \description{
 Estimate the row mean from a \code{mtsdi} object regarding a fixed number of imputed values
@@ -18,9 +18,9 @@ getmean(object, weighted=TRUE, mincol=1, maxconsec=3)
  It is useful just in case one wants row mean estimated. If log tranformation was used, mean is adjusted accordingly. 
 }
 \value{
- A vector of of rows mean with lenght \code{n}, where \code{n} is the number of observations.
+ A vector of of rows mean with length \code{n}, where \code{n} is the number of observations.
  }
-\author{Washington Leite Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
+\author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }
 \seealso{\code{\link{mnimput}}, \code{\link{getmean}}, \code{\link{edaprep}}}
 \examples{
