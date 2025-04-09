@@ -1,9 +1,9 @@
 \name{mkjnw}
 \alias{mkjnw}
-\title{Example from Johnson \& Wichern's Book
+\title{Example from Johnson and Wichern's Book
 }
 \description{
-Create a data matrix from the Johnson \& Wichern's book
+Create a data matrix from the Johnson and Wichern's book
 }
 \usage{
 mkjnw()

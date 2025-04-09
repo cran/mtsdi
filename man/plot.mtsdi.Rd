@@ -16,10 +16,10 @@ This function produces a plot with imputed values and the estimated level for ea
   \item{leg.loc}{a list with \code{x} and \code{y} coordinates for the legend or a quoted string. Default is "topright". See Details}
   \item{horiz}{logical. If \code{TRUE}, the legend will horizontal oriented}
   \item{at.once}{logical. If \code{TRUE}, all the variables are plot in separate windows at once}
-  \item{\dots}{further options for function \code{\link{plot}}}
+  \item{\dots}{further options for function \code{\link[base]{plot}}}
 }
 \details{
-The \code{leg.loc} option may also be specified by setting one of the following quoted strings \code{"bottomright"}, \code{"bottom"}, \code{"bottomleft"}, \code{"left"}, \code{"topleft"}, \code{"top"}, \code{"topright"}, \code{"right"}, or \code{"center"}. This places the legend on the inside of the plot frame at the given location with the orietation set by \code{horiz}. See \code{\link{legend}} for further details.
+The \code{leg.loc} option may also be specified by setting one of the following quoted strings \code{"bottomright"}, \code{"bottom"}, \code{"bottomleft"}, \code{"left"}, \code{"topleft"}, \code{"top"}, \code{"topright"}, \code{"right"}, or \code{"center"}. This places the legend on the inside of the plot frame at the given location with the orietation set by \code{horiz}. See \code{\link[graphics]{legend}} for further details.
 }
 \author{Washington Junger \email{wjunger@ims.uerj.br} and Antonio Ponce de Leon \email{ponce@ims.uerj.br}
 }

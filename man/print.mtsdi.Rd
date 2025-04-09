@@ -10,7 +10,7 @@ Printing method for the imputation model
 \arguments{
   \item{x}{an object of class \code{summary.mtsdi}}
   \item{digits}{an integer indicating the decimal places. If not supplied, it is taken from \code{\link{options}}}
-  \item{\dots}{further options passed to \code{\link{print}}}
+  \item{\dots}{further options passed to \code{\link[base]{print}}}
 }
 \value{
 This function does not return a value.

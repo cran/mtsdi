@@ -10,7 +10,7 @@ Printing method for the summary
 \arguments{
   \item{x}{an object of class \code{summary.mtsdi}}
   \item{print.models}{a logical indicating that time filtering models should also be printed}
-  \item{digits}{an integer indicating the decimal places. If not supplied, it is taken from \code{\link{options}}}
+  \item{digits}{an integer indicating the decimal places. If not supplied, it is taken from \code{\link[base]{options}}}
   \item{\dots}{further options passed from \code{\link{summary.mtsdi}}}
 }
 \value{

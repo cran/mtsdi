@@ -26,6 +26,7 @@
 \alias{em.filter}
 \alias{em.recursion}
 \alias{em.nofilter}
+\alias{.onUnload}
 
 \title{Internal function
 }
